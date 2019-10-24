@@ -7,7 +7,7 @@ import java.nio.channels.FileChannel;
 import java.util.Scanner;
 
 /**
- * 描述：测试守护线程，setDaemon(true)，辅助其他线程A执行，当线程A结束时，守护线程也不复存在
+ * 描述：测试守护线程，setDaemon(true)，辅助其他线程A执行，当JVM中所以非守护线程结束时，守护线程也不复存在
  *		使用JDK下的jstack工具可以查看JVM线程快照，命令：jstack -l PID（当前JVM进程的PID）
  *		结果中的daemon标记的线程为守护线程 
  * @author 80002888
